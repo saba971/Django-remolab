@@ -1,0 +1,688 @@
+[31/Oct/2018 02:28:11] "GET / HTTP/1.1" 200 1757
+[31/Oct/2018 02:32:25] "GET / HTTP/1.1" 200 1757
+[31/Oct/2018 02:32:27] "GET / HTTP/1.1" 200 1757
+[31/Oct/2018 02:32:29] "GET / HTTP/1.1" 200 1757
+[31/Oct/2018 02:32:33] "GET /login/ HTTP/1.1" 404 1920
+[31/Oct/2018 02:50:56] "GET / HTTP/1.1" 200 1757
+Validating models...
+
+0 errors found
+October 31, 2018 - 02:28:07
+Django version 1.6, using settings 'RemoteLab.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[31/Oct/2018 02:56:09] "GET / HTTP/1.1" 200 1757
+[31/Oct/2018 02:56:17] "GET /login/ HTTP/1.1" 404 1920
+[31/Oct/2018 04:12:17] "GET /login/ HTTP/1.1" 404 1920
+[31/Oct/2018 04:12:21] "GET / HTTP/1.1" 200 1757
+[31/Oct/2018 04:12:41] "GET /search_form/ HTTP/1.1" 404 1938
+Validating models...
+
+0 errors found
+October 31, 2018 - 02:56:09
+Django version 1.6, using settings 'RemoteLab.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /search_form/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 1, in <module>
+    from django.conf.urls.defaults import url, include
+ImportError: No module named defaults
+[31/Oct/2018 04:17:38] "GET /search_form/ HTTP/1.1" 500 76444
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 1, in <module>
+    from django.conf.urls.defaults import url, include
+ImportError: No module named defaults
+[31/Oct/2018 04:17:43] "GET /login/ HTTP/1.1" 500 76364
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 1, in <module>
+    from django.conf.urls.defaults import url, include
+ImportError: No module named defaults
+[31/Oct/2018 04:17:44] "GET /login/ HTTP/1.1" 500 76190
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from welcome.forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:18:58] "GET /login/ HTTP/1.1" 500 119899
+Internal Server Error: /search_form
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/usr/lib/python2.7/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 573, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 453, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from welcome.forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:19:18] "GET /search_form HTTP/1.1" 500 135342
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:22:14] "GET /login/ HTTP/1.1" 500 119697
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 8, in <module>
+    from .forms import *
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:26:21] "GET /login/ HTTP/1.1" 500 109327
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:27:17] "GET /login/ HTTP/1.1" 500 119885
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:35:28] "GET / HTTP/1.1" 500 130041
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:35:29] "GET / HTTP/1.1" 500 129867
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:35:34] "GET /login/ HTTP/1.1" 500 130107
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:35:35] "GET /login/ HTTP/1.1" 500 129933
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:40:53] "GET / HTTP/1.1" 500 130041
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:40:53] "GET / HTTP/1.1" 500 129867
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:40:57] "GET / HTTP/1.1" 500 130055
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:42:43] "GET / HTTP/1.1" 500 128951
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/usr/lib/python2.7/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 573, in is_valid_path
+    resolve(path, urlconf)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 453, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from .forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 11, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+Validating models...
+
+0 errors found
+October 31, 2018 - 04:17:37
+Django version 1.6, using settings 'RemoteLab.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+ImportError: No module named welcome.urls
+[31/Oct/2018 04:43:50] "GET / HTTP/1.1" 500 64860
+Validating models...
+
+0 errors found
+October 31, 2018 - 04:43:49
+Django version 1.6, using settings 'RemoteLab.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from welcome.forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:51:47] "GET / HTTP/1.1" 500 119833
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/akuma078/RemoteLab/welcome/urls.py", line 2, in <module>
+    from . import views
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 11, in <module>
+    from welcome.forms import ConnectionForm
+  File "/home/akuma078/RemoteLab/welcome/forms.py", line 9, in <module>
+    class ConnectionForm(forms.ModelForm):
+  File "/usr/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    raise TypeError(msg)
+TypeError: ConnectionForm.Meta.exclude cannot be a string. Did you mean to type: ('user',)?
+[31/Oct/2018 04:52:04] "GET / HTTP/1.1" 500 119833
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/akuma078/RemoteLab/welcome/views.py", line 85, in main_page
+    'index.html',RequestContext(request)
+  File "/usr/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/template/loader.py", line 164, in render_to_string
+    return t.render(Context(dictionary))
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/usr/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/usr/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/usr/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/usr/lib/python2.7/site-packages/django/template/defaulttags.py", line 298, in render
+    match = condition.eval(context)
+  File "/usr/lib/python2.7/site-packages/django/template/defaulttags.py", line 867, in eval
+    return self.value.resolve(context, ignore_failures=True)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 585, in resolve
+    obj = self.var.resolve(context)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 735, in resolve
+    value = self._resolve_lookup(context)
+  File "/usr/lib/python2.7/site-packages/django/template/base.py", line 765, in _resolve_lookup
+    current = current[bit]
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 298, in _setup
+    self._wrapped = self._setupfunc()
+  File "/usr/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 18, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/usr/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/usr/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 133, in get_user
+    user_id = request.session[SESSION_KEY]
+  File "/usr/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 47, in __getitem__
+    return self._session[key]
+  File "/usr/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 173, in _get_session
+    self._session_cache = self.load()
+  File "/usr/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 20, in load
+    expire_date__gt=timezone.now()
+  File "/usr/lib/python2.7/site-packages/django/db/models/manager.py", line 151, in get
+    return self.get_queryset().get(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/db/models/query.py", line 301, in get
+    num = len(clone)
+  File "/usr/lib/python2.7/site-packages/django/db/models/query.py", line 77, in __len__
+    self._fetch_all()
+  File "/usr/lib/python2.7/site-packages/django/db/models/query.py", line 854, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/usr/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 710, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/usr/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 780, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/lib/python2.7/site-packages/django/db/backends/__init__.py", line 157, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/lib/python2.7/site-packages/django/db/backends/__init__.py", line 129, in _cursor
+    self.ensure_connection()
+  File "/usr/lib/python2.7/site-packages/django/db/backends/__init__.py", line 124, in ensure_connection
+    self.connect()
+  File "/usr/lib/python2.7/site-packages/django/db/utils.py", line 99, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/lib/python2.7/site-packages/django/db/backends/__init__.py", line 124, in ensure_connection
+    self.connect()
+  File "/usr/lib/python2.7/site-packages/django/db/backends/__init__.py", line 112, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 435, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'remotelab'")
+[31/Oct/2018 04:54:17] "GET / HTTP/1.1" 500 298352
+[31/Oct/2018 05:05:02] "GET / HTTP/1.1" 200 2285
+[31/Oct/2018 05:05:02] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:02] "GET /site_media/me.ico HTTP/1.1" 404 1677
+[31/Oct/2018 05:05:10] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:05:12] "GET / HTTP/1.1" 200 2285
+[31/Oct/2018 05:05:12] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:15] "GET /login/ HTTP/1.1" 200 987
+[31/Oct/2018 05:05:15] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:18] "POST /login/ HTTP/1.1" 200 1004
+[31/Oct/2018 05:05:18] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:18] "GET / HTTP/1.1" 200 2285
+[31/Oct/2018 05:05:18] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:18] "GET /site_media/me.ico HTTP/1.1" 404 1677
+[31/Oct/2018 05:05:25] "POST /login/ HTTP/1.1" 200 1004
+[31/Oct/2018 05:05:25] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:29] "GET / HTTP/1.1" 200 2285
+[31/Oct/2018 05:05:29] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:39] "GET /login/ HTTP/1.1" 200 987
+[31/Oct/2018 05:05:39] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:45] "POST /login/ HTTP/1.1" 200 1004
+[31/Oct/2018 05:05:45] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:05:53] "POST /login/ HTTP/1.1" 200 1004
+[31/Oct/2018 05:05:53] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:06:01] "GET /admin HTTP/1.1" 301 0
+[31/Oct/2018 05:06:01] "GET /admin/ HTTP/1.1" 200 1865
+[31/Oct/2018 05:06:03] "POST /admin/ HTTP/1.1" 200 2029
+[31/Oct/2018 05:06:34] "GET /admin HTTP/1.1" 301 0
+[31/Oct/2018 05:06:34] "GET /admin/ HTTP/1.1" 200 1865
+[31/Oct/2018 05:06:45] "POST /login/ HTTP/1.1" 200 1004
+[31/Oct/2018 05:06:45] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:06:48] "POST /login/ HTTP/1.1" 302 0
+[31/Oct/2018 05:06:48] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:06:48] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:06:56] "GET /logout HTTP/1.1" 301 0
+[31/Oct/2018 05:06:56] "GET /logout/ HTTP/1.1" 302 0
+[31/Oct/2018 05:06:56] "GET / HTTP/1.1" 200 2285
+[31/Oct/2018 05:06:56] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:07:00] "GET /login/ HTTP/1.1" 200 987
+[31/Oct/2018 05:07:00] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:07:06] "POST /login/ HTTP/1.1" 200 1004
+[31/Oct/2018 05:07:06] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:07:09] "POST /login/ HTTP/1.1" 302 0
+[31/Oct/2018 05:07:09] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:07:10] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:07:19] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:07:21] "GET /blogs/ HTTP/1.1" 200 16002
+[31/Oct/2018 05:07:21] "GET /blogs/style.css HTTP/1.1" 404 10152
+[31/Oct/2018 05:07:23] "GET /contact/ HTTP/1.1" 200 2714
+[31/Oct/2018 05:07:25] "GET /info/ HTTP/1.1" 200 6807
+[31/Oct/2018 05:07:27] "GET /initial_form/ HTTP/1.1" 200 1966
+[31/Oct/2018 05:13:19] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:19] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:20] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:20] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:21] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:21] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:22] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:22] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:22] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:22] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:22] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:22] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:22] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:22] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:26] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:26] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:28] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:13:30] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:54] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:54] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:54] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:55] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:13:59] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:13:59] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:14:02] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:28:48] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:28:48] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:28:50] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:28:50] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:28:50] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:28:50] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:28:50] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:28:50] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:28:52] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:28:52] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:28:55] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:28:55] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:28:58] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:30:54] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:30:54] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:30:56] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:45] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:46] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:46] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:46] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:47] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:47] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:47] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:47] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:47] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:48] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:48] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:48] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:48] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:48] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:31:48] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:32] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:32] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:33] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:33] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:33] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:33] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:32:33] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:34] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:35] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:35] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:35] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:35] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:35] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:36] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:36] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:36] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:36] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:37] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:37] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:41] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:44] "GET / HTTP/1.1" 200 3628
+[31/Oct/2018 05:34:44] "GET /site_media/style.css HTTP/1.1" 404 1686
+[31/Oct/2018 05:34:47] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:49] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:50] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:50] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:50] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:51] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:51] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:51] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:51] "GET /introduction/ HTTP/1.1" 200 1196
+[31/Oct/2018 05:34:51] "GET /introduction/ HTTP/1.1" 200 1196
